@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EmployeeService } from '../employee.service';
 import { EmployeeDto } from '../model/employee.model';
-import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-create-employee',
@@ -12,7 +11,6 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 export class CreateEmployeeComponent implements OnInit {
 
   employee: EmployeeDto = new EmployeeDto();
-  navBar: NavBarComponent = new NavBarComponent;
   constructor(private employeeService: EmployeeService,
     private router: Router) { }
 

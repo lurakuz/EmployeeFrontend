@@ -13,21 +13,19 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CreateEmployeeComponent,
-    EmployeeDetailsComponent,
     EmployeeListComponent,
-    NavBarComponent,
+    CreateEmployeeComponent,
+    UpdateEmployeeComponent,
+    EmployeeDetailsComponent,
     RegistrationComponent,
-    UpdateEmployeeComponent
+    AppComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    AppComponent,
-    AppModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
