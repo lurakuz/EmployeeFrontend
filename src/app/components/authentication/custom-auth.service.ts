@@ -50,6 +50,7 @@ export class CustomAuthService {
   logout(): void {
     this.http.get("http://localhost:8080/auth/logout", {headers}).subscribe(() => {
       this.tokenStorage.signOut();
+      this.router.navigate(['/login']);
       if (!this.checkLoggedUser) {
         console.log("logout successed");
         this.router.navigate(['login']);

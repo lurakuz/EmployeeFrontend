@@ -12,3 +12,10 @@ services:
       - MYSQL_PASSWORD=An0thrS3crt
       - MYSQL_USER=citizix_user
       - MYSQL_DATABASE=citizix_db
+  employee-frontend:
+    image: employee-frontend:latest
+    ports: 
+      - 4200:4200
+    build: ./
+    command: > 
+        bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"

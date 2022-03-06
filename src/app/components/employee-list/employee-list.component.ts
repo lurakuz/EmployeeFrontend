@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {EmployeeDto} from '../../model/employee.model'
 import { EmployeeService } from '../../service/employee.service';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-employee-list',
